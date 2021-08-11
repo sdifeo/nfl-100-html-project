@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: rgb(138, 136, 136); 
+    font-family: 'Montserrat', sans-serif;
+    /* background-image: url("../media/loginFBField.jpg"); */
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+
+}
+
+.log-inBox{
+    width: 800px;
+    height: 350px;
+    margin: auto;
+    margin-top: 65px;
+    box-shadow: 3px 5px 25px black;
+    background-color: #252627;
+    border-radius: 50px;
+    animation-name: slide-in-left;
+    animation-duration: .8s;
+
+}
+
+.nflLogo img{
+  width: 200px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  
+}
+
+#LIHeader h1{
+    padding-top: 20px;
+    text-align: center;
+    color: #DAA520;
+
+}
+
+.infoArea {
+    margin-top: 50px;
+    margin-left: 50px;
+    color: #DAA520;
+
+}
+
+.infoArea p{
+    text-decoration: underline;
+    font-weight: bolder;
+    justify-self: center;
+    
+}
+
+#submitButton button{
+    margin-top: 25px;
+    height: 40px;
+    width: 75px;
+    border: none;
+    justify-content: right;
+    background-color: #DAA520;
+    border-radius: 10px;
+    
+}
+
+.Welcome{
+  text-align: center;
+  font-size: 50px;
+}
+
+#secondary{
+  font-size: 25px;
+}
+
+#username, #password {
+  border: 3px solid gray;
+  font-size: medium;
+
+}
+
+
+/**
+animation slide-in-left
+code from animista.cnet
+ */
+@-webkit-keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .footer{
+    border-top: 1px solid black;
+    text-align: center;
+
+}
+
+.footer img{
+    max-width: 30px;
+    max-height: 30px;
+
+}

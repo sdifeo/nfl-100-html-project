@@ -1,0 +1,284 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./CSS/merch.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="header">
+        <ul>
+            <li><a href="./checkout.html">Checkout</a></li>
+            <li><a href="merchandise.html">Merchandise</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="coaches.html">Coaches</a></li>
+            <li id=""><a href="playersSelection.html">Players</a></li>
+            <a href="./index.html"><img id="Logo"  src="./media/NFL_gold_logo_20.png"></a>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        
+        <div class="filter">
+            <h3 id="fName">Filters</h3>
+
+            <h4>Search</h4>
+            <input id="search" type="text" placeholder="Search for item...">
+
+            <ol>
+                <li>
+                    <label>Jerseys<input onclick="filter()" id="filterJersey" type="checkbox"></label>
+                </li>
+                <li>
+                    <label>Posters<input id="filterPosters" type="checkbox"></label>
+                </li>
+                <li>
+                    <label>Other<input id="filterOther" type="checkbox"></label>
+                </li>
+            </ol>
+
+            <div class="cartButton">
+                <button class="viewCart">View Cart</button>
+
+                <div class="modal">
+                    <div class="mContent">
+                        <span class="closeBtn">&#10006;</span>
+                        <div class="cContainer">
+                            <span class="sectionHeader">CART</span>
+
+                            <div class="displayCart">
+                                
+                            </div>
+                            
+                            <div class="displayCartPrice">
+                                <p class="priceName">Total Price</p>
+                                <p class="priceNum">$0.00</p>
+
+                                <a><button class="update" onclick=updateCart()>UPDATE PRICE</button></a>
+                                <a href="checkout.html"><button class="checkOut" >CHECKOUT</button></a>
+                                
+
+                            </div>
+                                
+                            </div>                                              
+                        </div>
+                    </div>                               
+                </div>
+            
+    
+        </div>
+
+        
+
+        <div class="merchContainer">
+
+            
+        
+
+        <ol class="merchandise">
+            <li class="merch">
+                <div class="brettFavre" id="jersey">
+                    <div class="bg"></div>
+                    <a><img class="merchImg" src="./merch/brettFavre.png"></a>
+                    <p class="name" id="name">Brett Favre Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="bruceSmith" id="jersey">
+                    <div class="bg2"></div>
+                    <a><img class="merchImg" src="./merch/bruceSmith.png"></a>
+                    <p class="name">Bruce Smith Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+            
+            <li class="merch">
+                <div class="deaconJones">
+                    <a><img class="merchImg" id="jersey" src="./merch/deaconJones.png"></a>
+                    <p class="name">Deacon Jones Jerseys</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="deionSanders">
+                    <a><img class="merchImg" id="jersey" src="./merch/deionSanders.png"></a>
+                    <p class="name">Deion Sanders Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="devinHester">
+                    <a><img class="merchImg" id="jersey" src="./merch/devinHester.png"></a>
+                    <p class="name">Devin Hester Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="emmitSmith">
+                    <a><img class="merchImg" id="jersey" src="./merch/emmitSmith.png"></a>
+                    <p class="name">Emmit Smith Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="jRice">
+                    <a><img class="merchImg" id="jersey" src="./merch/jerryRice.png"></a>
+                    <p class="name">Jerry Rice Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="lTaylor">
+                    <a><img class="merchImg" id="jersey" src="./merch/lawrenceTaylor.png"></a>
+                    <p class="name">Lawrence Taylor Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="NTLane">
+                    <a><img class="merchImg" id="jersey" src="./merch/nightTrain.png"></a>
+                    <p class="name">Night Train Lane Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="RMoss">
+                    <a><img class="merchImg" id="jersey" src="./merch/randyMoss.png"></a>
+                    <p class="name">Randy Moss Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div> 
+            </li>
+
+            <li class="merch">
+                <div class="rLewis">
+                    <a><img class="merchImg" id="jersey" src="./merch/rayLewis.png"></a>
+                    <p class="name">Ray Lewis Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="rWhite">
+                    <a><img class="merchImg" id="jersey" src="./merch/reggieWhite.png"></a>
+                    <p class="name">Reggie White Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="tBrady">
+                    <a><img class="merchImg" id="jersey" src="./merch/tomBradyPats.png"></a>
+                    <p class="name">Tom Brady Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="wPayton">
+                    <a><img class="merchImg" id="jersey" src="./merch/walterPayton.png"></a>
+                    <p class="name">Walter Payton Jersey</p>
+                    <p class="price" id="price">$120.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="book">
+                    <a><img class="merchImg" id="other" src="./merch/nfl100book.png"></a>
+                    <p class="name">Offical NFL 100 book</p>
+                    <p class="price" id="price">$35.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="football">
+                    <a><img class="merchImg" id="other" src="./merch/football100.png"></a>
+                    <p class="name">Offical NFL 100 Football</p>
+                    <p class="price" id="price">$75.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="poster1">
+                    <a><img class="merchImg" id="poster" src="./merch/100Teams.jpg"></a>
+                    <p class="name">Offical NFL 100 Teams Poster</p>
+                    <p class="price" id="price">$60.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="poster2">
+                    <a><img class="merchImg" id="poster" src="./merch/100RBPoster.jpg"></a>
+                    <p class="name">Offical NFL 100 Runningback Poster</p>
+                    <p class="price" id="price">$65.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="poster3">
+                    <a><img class="merchImg" id="poster" src="./merch/100QBPoster.jpg"></a>
+                    <p class="name">Offical NFL 100 Quarterback Poster</p>
+                    <p class="price" id="price">$65.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>
+
+            <li class="merch">
+                <div class="poster4">
+                    <a><img class="merchImg" id="poster" src="./merch/100DLine.jpg"></a>
+                    <p class="name">Offical NFL 100 D-Line Poster</p>
+                    <p class="price" id="price">$65.00</p>
+                    <button class="addToCart">Add to Cart</button>
+                </div>
+            </li>         
+            
+        </ol>
+
+        </div>
+
+        
+
+    </div>
+</div>
+
+    <div class="footer">
+        <footer>
+            <p>Our social media</p>
+            <a href="https://www.facebook.com"><img src="./media/footer/facebook.png"></a>
+            <a href="https://myaccount.google.com/profile"><img src="./media/footer/image.png"></a>
+            <a href="https://www.instagram.com/?hl=en"><img src="./media/footer/instagram.png"></a>
+        </footer>
+    </div>
+
+<script src="scripts/jquery-3.5.0.min.js"></script>
+<script src="scripts/merchandise.js" async></script>
+</body>

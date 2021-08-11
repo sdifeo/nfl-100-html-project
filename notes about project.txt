@@ -1,0 +1,2 @@
+Hardest part of project: 
+	Was finding the videos that were able to be embeded. 99% of videos that have NFL content on youtube are not embedable. I had to resort to Facebook at one point, since somehow it allowed me to embed them on the website.

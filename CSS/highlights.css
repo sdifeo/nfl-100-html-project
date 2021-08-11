@@ -1,0 +1,121 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: #252627; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: whitesmoke;
+    float: right;
+    width: 100%;
+    align-items: center;
+
+}
+
+.header ul{
+    list-style: none;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+.header li{
+    margin-top: 29px;
+    display: inline;
+    margin-right: 65px;
+    float: right;
+    
+}
+
+.header a{
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.header a:active{
+    text-decoration: underline;
+    text-decoration-color: white;
+    
+}
+
+#Logo{
+    margin: 0;
+    padding: 9px;
+
+}
+
+hr{
+    margin-bottom: 0;
+    height: 5px;
+    background-color: white;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: auto;
+
+}
+
+.highlightsContainer{
+    grid-template-rows: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+
+}
+
+.highlight1{
+    grid-row: 1;
+
+}
+
+.displayMessage{
+    text-align: center;
+
+}
+
+.displayMessage{
+    color: thistle;
+
+}
+
+.title{
+    text-align: center;
+    color: aquamarine;
+
+}
+
+.description{
+    color: white;
+    text-align: center;
+
+}
+
+#video{
+    background-color: rgb(128, 128, 128, 0.1);
+    text-align: center;
+
+}
+
+.footer{
+    border-top: 1px solid black;
+    text-align: center;
+
+}
+
+.footer img{
+    max-width: 30px;
+    max-height: 30px;
+
+}

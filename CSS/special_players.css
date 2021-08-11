@@ -1,0 +1,395 @@
+body{
+    margin: 0px;
+    padding:0px;
+    background-color: #252627; 
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.header{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: whitesmoke;
+    float: right;
+    width: 100%;
+    align-items: center;
+
+}
+
+.header ul{
+    list-style: none;
+    margin-right: 25px;
+    text-transform: uppercase;
+}
+
+.header li{
+    margin-top: 29px;
+    display: inline;
+    margin-right: 65px;
+    float: right;
+    
+}
+
+.header a{
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.header a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.header a:active{
+    text-decoration: underline;
+    text-decoration-color: white;
+    
+}
+
+#Logo{
+    margin: 0;
+    padding: 9px;
+
+}
+
+hr{
+    margin-bottom: 0;
+    height: 5px;
+    background-color: white;
+
+}
+
+.quickNav{
+    text-align: center;
+       
+}
+
+.quickNav li{
+    list-style: none;
+    display: inline; 
+
+}
+
+.quickNav a{
+    text-decoration: underline;
+    color: #DAA520
+
+}
+
+.quickNav a:visited{
+    color: #DAA520
+}
+
+.descriptionHeader{
+    text-align: center;
+    color: #DAA520;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+#specifier{
+    margin-top: 75px;
+    font-size: x-large;
+
+}
+
+.playersContainer{
+    width: 90%;
+    margin: auto;
+
+}
+
+/*======= SPECIAL TEAMS =======*/
+
+.kickers, .punters, .kickReturners {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    align-self: center;
+    font-size: large;
+    
+}
+
+.kickers img, .punters img, .kickReturners img {
+    width: 250px;
+    cursor: pointer;
+    
+}
+
+.k1, .p1, .KR1{
+    grid-column: 2;
+    text-align: center;
+    position: relative;
+    
+}
+
+.k1:hover p, .p1:hover p, .KR1:hover p{
+    color: red;
+    
+}
+
+.k2, .p2, .KR2{
+    grid-column: 5;
+    text-align: center;
+
+}
+
+.k2:hover p, .p2:hover p, .KR2:hover p{
+    color: red;
+}
+
+/*======= OFFENCE =======*/
+
+.quarterBack, .runningBack, .wideReceiver{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    font-size: large;
+
+}
+
+.quarterBack img, .runningBack img, .wideReceiver img{
+    width: 250px;
+    cursor: pointer;
+
+}
+
+p{
+    color: white;
+}
+
+.QB1, .RB1, .WR1{
+    grid-column: 2;
+    position: relative;
+
+}
+
+.QB2, .RB2, .WR2{
+    grid-column: 4;
+    position: relative;
+
+}
+
+.QB3, .RB3, .WR3{
+    grid-column: 6;
+    position: relative;
+
+}
+
+.QB4, .RB4, .WR4{
+    grid-column: 8;
+    position: relative;
+
+}
+
+.QB1:hover p, .QB2:hover p, .QB3:hover p, .QB4:hover p, .RB1:hover p, .RB2:hover p, .RB3:hover p, .RB4:hover p, .WR1:hover p, .WR2:hover p, .WR3:hover p, .WR4:hover p{
+    color: #39B7CD;
+    
+}
+
+/*======= DEFENCE =======*/
+
+.Defense{
+    margin-top: 100px;
+}
+
+.cornerBack, .lineBacker, .defensiveEnds{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    align-self: center;
+    text-align: center;
+    font-size: large;
+
+}
+
+.cornerBack img, .lineBacker img, .defensiveEnds img{
+    width: 250px;
+    cursor: pointer;
+
+}
+
+.CB1, .LB1, .WR1{
+    grid-column: 2;
+    position: relative;
+
+}
+
+.CB2, .LB2, .WR2{
+    grid-column: 4;
+    position: relative;
+
+}
+
+.CB3, .LB3, .WR3{
+    grid-column: 6;
+    position: relative;
+
+}
+
+.DE1{
+    grid-column: 3;
+
+}
+
+.DE2{
+    grid-column: 5;
+}
+
+.DE3{
+    grid-column: 7;
+}
+
+.CB4, .LB4, .WR4{
+    grid-column: 8;
+    position: relative;
+
+}
+
+.CB1:hover p, .CB2:hover p, .CB3:hover p, .CB4:hover p, .LB1:hover p, .LB2:hover p, .LB3:hover p, .LB4:hover p, .DE1:hover p, .DE2:hover p, .DE3:hover p, .WR4:hover p{
+    color: gold;
+    
+}
+
+.bg{
+    background-image: url("../media/PBackground/dark-studio-background_1258-14.jpg");
+    background-position: center;
+    background-size: 200%;
+    grid-row: 1;
+    grid-column: 1;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    z-index: -1;
+    filter: blur(10px);
+    
+}
+
+.k1, .k2, .KR1, .KR2, .p1, .p2, .QB1, .QB2, .QB3, .QB4, .RB1, .RB2, .RB3, .RB4, .WR1, .WR2, .WR3, .WR4,
+.CB1, .CB2, .CB3, .CB4, .LB1, .LB2, .LB3, .LB4, .DE1, .DE2, .DE3{
+    box-shadow: 1px 1px 20px;
+}
+
+.footer{
+    border-top: 1px solid black;
+    text-align: center;
+
+}
+
+.footer img{
+    max-width: 30px;
+    max-height: 30px;
+
+}
+
+/*===MODALS===*/
+
+.closeBtn{
+    float: right;
+    margin-right: 30px;
+}
+
+#video{
+    width: 600px;
+    height: 300px;
+    margin-top: 50px
+}
+
+#mInfo{
+    color: black;
+    font-size: medium;
+    width: 70%;
+    margin: auto;
+
+}
+
+.playerDetails{
+    text-align: center;
+    
+}
+
+.playerDetails h2, .playerDetails h4{
+    text-decoration: underline;
+
+}
+
+.mContent{
+    background-color: #cccccc;
+    margin: 5% auto;
+    width: 90%;
+    height: 90%;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.4);
+    list-style: none;
+    
+
+}
+
+ol{
+    list-style: none;
+}
+
+#modal-K1, #modal-K2, #modal-P1, #modal-P2{
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid black;
+
+}
+
+.modal{
+    text-align: center;
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0; top: 0;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid black; 
+    
+}
+
+.openModal{
+    display: block;
+
+}
+
+#modal-k1 ol, #modal-K2 ol{
+    list-style: none;
+
+}
+
+.intro{
+    text-align: center;
+
+}
+
+@media only screen and (max-width: 800px) {
+    .kickers, .punters, .kickReturners {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .quarterBack, .runningBack, .wideReceiver{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+  }
+
+}
